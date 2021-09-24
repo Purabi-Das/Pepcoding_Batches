@@ -6,12 +6,27 @@
 <body>
       <button onclick="appendFunction()">Say Hello</button>
       <script>
-        //   qs - on clicking the buttoon append paragraph with text hello to the page
-        function appendFunction() {
-            var txt = document.createElement("TEXT");
-            txt.innerHTML = "Hello\n";  
-            document.body.appendChild(txt);
-        }
+        //   qs - on clicking the buttoon append paragraph with text hello to the page  
+
+        // Method - 1
+        let button = document.querySelector("button");
+        button.addEventListener("click", function () {
+            // p tag created
+            let p = document.createElement("p");
+            // p tag hello put
+            p.textContent = "Hello";
+            // append page 
+            document.body.appendChild(p);
+        })
+
+
+        // Method - 2
+        //   function appendFunction() {
+        //     var txt = document.createElement("TEXT");
+        //     txt.innerHTML = "Hello\n";  
+        //     document.body.appendChild(txt);
+        // }
+        
       </script>  
 </body>
 </html>
