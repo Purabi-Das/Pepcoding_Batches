@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- SEO -->
+</head>
+<body>
+    <!--   DOM => document object model   -->
+    <h1>Hello Dom</h1>
+    <!-- js -->
+    <script>
+        // html, css
+        // Create
+        // browser -> browser
+        let p = document.createElement("p");
+        p.textContent = "I am the p tag here";
+
+        // Read
+        let body = document.querySelector("body");
+        body.appendChild(p);
+
+        // update
+        setTimeout(function () {
+            p.textContent = "come again";
+       }, 1000)
+
+    //    delete
+    setTimeout(function() {
+        p.remove();
+    }, 2000)
+
+    // add css using dom
+    p.style.backgroundColor = "yellow";
+
+    </script>
+
+</body>
+</html>

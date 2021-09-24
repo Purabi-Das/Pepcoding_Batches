@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+      <button onclick="appendFunction()">Say Hello</button>
+      <script>
+        //   qs - on clicking the buttoon append paragraph with text hello to the page
+        function appendFunction() {
+            var txt = document.createElement("TEXT");
+            txt.innerHTML = "Hello\n";  
+            document.body.appendChild(txt);
+        }
+      </script>  
+</body>
+</html>
